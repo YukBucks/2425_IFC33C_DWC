@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/css/piano.css">
+
+    <link rel="icon" type="image/png" sizes="128x128" href="assets/img/icons/favicon-128x128.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/icons/favicon-16x16.png">
+    <link rel="icon" type="image/ico" href="assets/img/icons/favicon.ico">
+</head>
+<body>
+    <div class="score">
+        Score Finder 
+    </div>
+    <ul class="piano">
+        <li class="key" data-note="C">
+            <span class="white-key" id="DO"></span>
+            <span class="black-key" id="DO#"></span>
+        </li>
+        <li class="key" data-note="D">
+            <span class="white-key" id="RE"></span>
+            <span class="black-key" id="RE#"></span>
+        </li>
+        <li class="key" data-note="E">
+            <span class="white-key" id="MI"></span>
+        </li>
+        <li class="key" data-note="F">
+            <span class="white-key" id="FA"></span>
+            <span class="black-key" id="FA#"></span>
+        </li>
+        <li class="key" data-note="G">
+            <span class="white-key" id="SOL"></span>
+            <span class="black-key" id="SOL#"></span>
+        </li>
+        <li class="key" data-note="A">
+            <span class="white-key" id="LA"></span>
+            <span class="black-key" id="LA#"></span>
+        </li>
+        <li class="key" data-note="B">
+            <span class="white-key" id="SI#"></span>
+        </li>
+        <li class="key" data-note="C2">
+            <span class="white-key" id="DO2"></span>
+        </li>
+    </ul>
+    
+    <div class="cerca">
+        <div class="big">
+            CERCANT...
+        </div>
+        <div class="notas">
+        </div>
+        <div class="boton" id="esborrar">
+            Esborrar
+        </div>
+        <div class="big">
+            RESULTATS:
+        </div>
+        <div class="fila">
+            <div id="resultados"></div>
+               <div class="boton">Reproducir Cancion</div>
+        </div>
+    </div>
+    <script src="/assets/js/piano.js"></script>
+</body>
+</html>

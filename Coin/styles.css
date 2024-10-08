@@ -1,0 +1,114 @@
+/* styles.css */
+
+body {
+  font-family: "Lucida Console", Courier, monospace;
+  text-align: center;
+  margin: 0; /* Elimina los márgenes por defecto */
+  height: 100vh; /* Asegúrate de que el body ocupe toda la altura de la ventana */
+  background: linear-gradient(
+    to top,
+    #863291,
+    #40c6cf
+  ); /* Degradado de verde a verde claro */
+}
+
+.container {
+  display: inline-block;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+button:disabled {
+  background-color: #cccccc;
+}
+
+.coin-container {
+  perspective: 1000px;
+  margin: 20px auto;
+  width: 120px;
+  height: 120px;
+}
+
+.coin {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  transform-style: preserve-3d;
+  transition: transform 2s ease-out;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: gold;
+}
+
+.coin-face {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff5a5;
+  backface-visibility: hidden;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.coin-front {
+  transform: rotateY(0deg);
+}
+
+.coin-back {
+  transform: rotateY(180deg);
+  background-color: #b8860b;
+}
+
+/* Símbolos distintivos para cara y cruz */
+.symbol {
+  font-size: 48px;
+  color: #333;
+  font-weight: bold;
+}
+
+#caraSymbol {
+  color: green; /* Color verde para el símbolo de la cara */
+}
+
+#cruzSymbol {
+  color: red; /* Color rojo para el símbolo de la cruz */
+  font-size: 50px; /* Aumentamos el tamaño para que sea más visible */
+}
+
+#resultMessage {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333;
+  font-family: "Lucida Console", Courier, monospace;
+}

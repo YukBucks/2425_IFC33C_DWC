@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cara o Cruz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Cara o Cruz</h1>
+
+    <form id="coinForm">
+      <label for="choice">Elige tu opción:</label>
+      <select id="choice">
+        <option value="">Elige una</option>
+        <option value="cara">Cara</option>
+        <option value="cruz">Cruz</option>
+      </select>
+      <button type="button" id="flipButton" disabled>Girar Moneda</button>
+    </form>
+
+    <div class="coin-container">
+      <div class="coin" id="coin">
+        <div class="coin-face coin-front">
+          <div class="symbol" id="caraSymbol">★</div>
+          <!-- Símbolo distintivo para "cara" -->
+        </div>
+        <div class="coin-face coin-back">
+          <div class="symbol" id="cruzSymbol">✚</div>
+          <!-- Símbolo distintivo para "cruz" -->
+        </div>
+        <div class="coin-edge"></div>
+      </div>
+    </div>
+
+    <p id="resultMessage"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
