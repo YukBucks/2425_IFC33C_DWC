@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+header {
+  background-color: #d32f2f;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+a:hover {
+  background-color: #930000;
+}
+.container {
+  padding: 20px;
+}
+.btn-new {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #d32f2f;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.btn-new:hover {
+  background-color: #930000;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid white;
+  padding: 8px;
+}
+
+tr:nth-child(odd) td {
+  background-color: white;
+}
+
+tr:nth-child(even) td {
+  background-color: #f0f0f0;
+}
+th {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #d32f2f;
+  color: white;
+}
+.actions {
+  display: flex;
+  gap: 10px;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: red;
+}

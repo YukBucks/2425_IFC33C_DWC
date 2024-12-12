@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-image: url("../img/background/background11.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+
+  h1 {
+    font-family: "Lobster", sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 15px white;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box;
+    box-shadow: 2px 1px 8px black;
+  }
+}
+
+input[type="submit"]:hover {
+  background-color: #930000;
+}
